@@ -23,7 +23,6 @@
     width: 100%;
     z-index: -1;
     /* opacity: 0.3; */
-    
     }
 .logo{
     width: 100px;
@@ -32,21 +31,17 @@
 #navbar ul{
     list-style: none;
     display: flex;
-    
     justify-content: center;
-   
-
 } 
 #navbar ul li a{
     font-family: 'Tilt Prism', cursive;
     text-decoration: none;
     margin: 15px;
     padding: 5px;
-color: aliceblue;    
+    color:antiquewhite ;    
     display: block;
     border-radius: 10px;
 }
-
 
 #navbar ul li a:hover{
     background-color: rgb(255, 255, 255);
@@ -58,11 +53,8 @@ color: aliceblue;
   justify-content: center;
 align-items: center;
 height: 300px;
-padding: 32px 1px; ;
+padding: 32px 1px; 
 color: white;
-
-
-
 }
 #home::before{
     content: "";
@@ -74,9 +66,7 @@ color: white;
     opacity: 0.89;
     top: 0px;
     left: 0px;
-
 }
-
 /* utility classes */
 
 .h-primary{
@@ -101,7 +91,7 @@ background-color: brown;
 color: white;
 cursor: pointer; 
 font-family: 'Roboto Slab', serif;
-border-radius:7px ;
+border-radius:7px;
 padding: 4px;
 }
 #home button:hover{
@@ -152,9 +142,8 @@ text-align: center;
     display: flex;
     /* display: block; */
     justify-content: space-evenly;
-   
-
 }
+
 .client-item img{
     cursor: pointer;
     padding-top: 60px;
@@ -185,7 +174,6 @@ text-align: center;
 .contact::before{
   position: absolute;
   content: "";
-  position: absolute;
   width: 100%;
   height: 102.5%;
   z-index: -1;
@@ -193,24 +181,22 @@ text-align: center;
   background: url('https://media.istockphoto.com/id/1161344489/photo/dice-with-communication-symbols-on-keyboard.jpg?s=612x612&w=0&k=20&c=7kuqRT0_YqoJkjTISFJk_-74Ox_9d7WX1rma-1nov5E=') no-repeat center center/cover;
 bottom:0px;  
 }
-
 .form-group{
-   
     text-align: center;
         /* font-size: 1.5rem; */
         display: flex;
         flex-direction: column;
         display: block;
     }
+
     .form-group label{
         position: relative;
         display: block;
         right: 50px;
-    top: 20px;
+        top: 20px;
     }
- 
+
 .center{
-  
     background-color: black;
 color: white;
 text-align: center;
