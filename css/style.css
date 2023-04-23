@@ -4,16 +4,17 @@
     font-family: 'Roboto Slab', serif;
    
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --navigation-height:59px;
 }
 #navbar {
     display: flex;
-    /* height: 250px; */
-
-    /* opacity: 0.4; */
-    position: relative;
-    /* position: sticky; */
+    align-items: center;
+    position:sticky;
+    top: 0px;
 }
 #navbar::before{
     content: "";
@@ -53,7 +54,7 @@
   justify-content: center;
 align-items: center;
 height: 300px;
-padding: 32px 1px; 
+padding: 3px 68px; 
 color: white;
 }
 #home::before{
@@ -92,11 +93,12 @@ color: white;
 cursor: pointer; 
 font-family: 'Roboto Slab', serif;
 border-radius:7px;
-padding: 4px;
+padding: 4px; 
 }
 #home button:hover{
     background-color: gold;
     color: black;
+    transition: 0.8s;
 }
 
 /* Services sectiion */
@@ -109,7 +111,7 @@ text-align: center;
 
 
 }
- .services-container { 
+ #services-container { 
     margin-top: -7px;
        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-XOmYaaqBZDqzyX6h6V9L1l-dOi86iIywDg&usqp=CAU') no-repeat center center/cover ;
 } 
@@ -117,6 +119,7 @@ text-align: center;
     width: 185px;
     height: 185px;
 }
+
 .box {
     background: url('');
     width: 450px;
@@ -133,6 +136,7 @@ text-align: center;
 .services{
     display: flex;
     justify-content: space-evenly;
+    padding: 0px 8px;
 }
 .client-item img{
     height: 170px;
@@ -148,9 +152,8 @@ text-align: center;
     cursor: pointer;
     padding-top: 60px;
 }
-.client-section{
-}
-.client-section::before{
+
+#client-section::before{
     content: "";
     position: absolute;
     background: url('https://media.istockphoto.com/id/1155862229/photo/qa-quality-assurance-and-quality-control-concept.jpg?s=612x612&w=0&k=20&c=8Lavtdo4EfTaq8xfjvRztOHEVlt8CR0ANJKItqJ-q54=') no-repeat center center/cover ;
@@ -159,7 +162,7 @@ text-align: center;
     z-index: -1 ;
     opacity: 0.85;
     margin-top: 90px;
-    top: 668px;
+    top: 608px;
     left: 0px;
 }
 .h-third_center{
@@ -168,10 +171,10 @@ text-align: center;
         font-size: 2.5rem;
         margin-top: 30px;
 }
-.contact{
+#contact{
     position: relative;
 }
-.contact::before{
+#contact::before{
   position: absolute;
   content: "";
   width: 100%;
@@ -192,8 +195,19 @@ bottom:0px;
     .form-group label{
         position: relative;
         display: block;
-        right: 50px;
+        right: 110px;
         top: 20px;
+        font-family: 'Roboto Slab', serif;
+        
+    }
+    .form-group input {
+        height: 20px;
+        width: 300px;
+    border-radius: 10px;
+    }
+    .form-group textarea{
+        border-radius: 10px;
+        width: 300px;
     }
 
 .center{
@@ -202,3 +216,7 @@ color: white;
 text-align: center;
 padding: 6px;
 }
+
+
+
+
